@@ -10,9 +10,9 @@ using namespace stan::math;
 stan::math::profile_map profiles__;
 static constexpr std::array<const char*, 4> locations_array__ = 
 {" (found before start of program)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_1_ppc.stan', line 2, column 3 to column 33)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_1_ppc.stan', line 3, column 3 to column 38)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_1_ppc.stan', line 4, column 3 to column 41)"};
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_1_ppc.stan', line 2, column 3 to column 33)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_1_ppc.stan', line 3, column 3 to column 39)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_1_ppc.stan', line 4, column 3 to column 41)"};
 
 
 
@@ -116,10 +116,10 @@ class cereal_1_ppc_model final : public model_base_crtp<cereal_1_ppc_model> {
       } 
       double mu = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 1;
-      mu = stan::math::normal_rng(107, 20, base_rng__);
+      mu = stan::math::normal_rng(104, 14, base_rng__);
       double sigma = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 2;
-      sigma = stan::math::exponential_rng(0.01, base_rng__);
+      sigma = stan::math::exponential_rng(0.071, base_rng__);
       double calories = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 3;
       calories = stan::math::normal_rng(mu, sigma, base_rng__);

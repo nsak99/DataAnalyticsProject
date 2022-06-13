@@ -8,31 +8,30 @@ using namespace stan::math;
 
 
 stan::math::profile_map profiles__;
-static constexpr std::array<const char*, 24> locations_array__ = 
+static constexpr std::array<const char*, 23> locations_array__ = 
 {" (found before start of program)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 8, column 3 to column 14)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 9, column 3 to column 13)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 10, column 3 to column 23)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 11, column 3 to column 30)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 15, column 3 to column 36)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 27, column 3 to column 21)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 28, column 3 to column 19)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 30, column 6 to column 71)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 31, column 6 to column 56)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 29, column 18 to line 32, column 4)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 29, column 3 to line 32, column 4)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 19, column 3 to column 27)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 20, column 3 to column 26)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 21, column 3 to column 29)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 23, column 3 to column 44)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 2, column 3 to column 9)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 3, column 10 to column 11)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 3, column 3 to column 20)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 4, column 17 to column 18)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 4, column 3 to column 20)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 15, column 10 to column 11)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 27, column 10 to column 11)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_3_fit.stan', line 28, column 16 to column 17)"};
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 8, column 3 to column 14)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 9, column 3 to column 13)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 10, column 3 to column 23)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 14, column 3 to column 36)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 25, column 3 to column 21)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 26, column 3 to column 19)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 28, column 6 to column 71)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 29, column 6 to column 56)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 27, column 18 to line 30, column 4)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 27, column 3 to line 30, column 4)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 18, column 3 to column 39)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 20, column 3 to column 30)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 21, column 3 to column 44)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 2, column 3 to column 9)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 3, column 10 to column 11)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 3, column 3 to column 20)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 4, column 17 to column 18)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 4, column 3 to column 20)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 14, column 10 to column 11)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 25, column 10 to column 11)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 26, column 16 to column 17)"};
 
 
 
@@ -70,17 +69,17 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
     try {
       int pos__ = std::numeric_limits<int>::min();
       pos__ = 1;
-      current_statement__ = 16;
+      current_statement__ = 15;
       context__.validate_dims("data initialization","N","int",
            std::vector<size_t>{});
       N = std::numeric_limits<int>::min();
       
       
-      current_statement__ = 16;
+      current_statement__ = 15;
       N = context__.vals_i("N")[(1 - 1)];
-      current_statement__ = 17;
+      current_statement__ = 16;
       stan::math::validate_non_negative_index("sugars", "N", N);
-      current_statement__ = 18;
+      current_statement__ = 17;
       context__.validate_dims("data initialization","sugars","double",
            std::vector<size_t>{static_cast<size_t>(N)});
       sugars__ = 
@@ -91,40 +90,40 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
       
       {
         std::vector<local_scalar_t__> sugars_flat__;
-        current_statement__ = 18;
+        current_statement__ = 17;
         sugars_flat__ = context__.vals_r("sugars");
-        current_statement__ = 18;
+        current_statement__ = 17;
         pos__ = 1;
-        current_statement__ = 18;
+        current_statement__ = 17;
         for (int sym1__ = 1; sym1__ <= N; ++sym1__) {
-          current_statement__ = 18;
+          current_statement__ = 17;
           stan::model::assign(sugars, sugars_flat__[(pos__ - 1)],
             "assigning variable sugars", stan::model::index_uni(sym1__));
-          current_statement__ = 18;
+          current_statement__ = 17;
           pos__ = (pos__ + 1);
         }
       }
-      current_statement__ = 19;
+      current_statement__ = 18;
       stan::math::validate_non_negative_index("calories", "N", N);
-      current_statement__ = 20;
+      current_statement__ = 19;
       context__.validate_dims("data initialization","calories","double",
            std::vector<size_t>{static_cast<size_t>(N)});
       calories = 
         std::vector<double>(N, std::numeric_limits<double>::quiet_NaN());
       
       
-      current_statement__ = 20;
+      current_statement__ = 19;
       calories = context__.vals_r("calories");
-      current_statement__ = 21;
+      current_statement__ = 20;
       stan::math::validate_non_negative_index("mu", "N", N);
-      current_statement__ = 22;
+      current_statement__ = 21;
       stan::math::validate_non_negative_index("log_lik", "N", N);
-      current_statement__ = 23;
+      current_statement__ = 22;
       stan::math::validate_non_negative_index("calorie", "N", N);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
-    num_params_r__ = 1 + 1 + 1 + 1;
+    num_params_r__ = 1 + 1 + 1;
     
   }
   
@@ -156,24 +155,21 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
       current_statement__ = 3;
       sigma = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(
                 0, lp__);
-      local_scalar_t__ nu = DUMMY_VAR__;
-      current_statement__ = 4;
-      nu = in__.template read_constrain_lub<local_scalar_t__, jacobian__>(1,
-             80, lp__);
       Eigen::Matrix<local_scalar_t__, -1, 1> mu =
          Eigen::Matrix<local_scalar_t__, -1, 1>::Constant(N, DUMMY_VAR__);
-      current_statement__ = 5;
+      current_statement__ = 4;
       stan::model::assign(mu,
         stan::math::add(stan::math::multiply(sugars, beta), alpha),
         "assigning variable mu");
       {
+        current_statement__ = 11;
+        lp_accum__.add(
+          stan::math::double_exponential_lpdf<propto__>(alpha, 104, 14));
         current_statement__ = 12;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(alpha, 107, 30));
-        current_statement__ = 13;
         lp_accum__.add(stan::math::lognormal_lpdf<propto__>(beta, 0, 1));
+        current_statement__ = 13;
+        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.071));
         current_statement__ = 14;
-        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.01));
-        current_statement__ = 15;
         lp_accum__.add(
           stan::math::double_exponential_lpdf<propto__>(calories, mu, sigma));
       }
@@ -219,23 +215,18 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
       current_statement__ = 3;
       sigma = in__.template read_constrain_lb<local_scalar_t__, jacobian__>(
                 0, lp__);
-      double nu = std::numeric_limits<double>::quiet_NaN();
-      current_statement__ = 4;
-      nu = in__.template read_constrain_lub<local_scalar_t__, jacobian__>(1,
-             80, lp__);
       Eigen::Matrix<double, -1, 1> mu =
          Eigen::Matrix<double, -1, 1>::Constant(N,
            std::numeric_limits<double>::quiet_NaN());
       out__.write(alpha);
       out__.write(beta);
       out__.write(sigma);
-      out__.write(nu);
       if (stan::math::logical_negation((stan::math::primitive_value(
             emit_transformed_parameters__) || stan::math::primitive_value(
             emit_generated_quantities__)))) {
         return ;
       } 
-      current_statement__ = 5;
+      current_statement__ = 4;
       stan::model::assign(mu,
         stan::math::add(stan::math::multiply(sugars, beta), alpha),
         "assigning variable mu");
@@ -250,16 +241,16 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
            std::numeric_limits<double>::quiet_NaN());
       std::vector<double> calorie =
          std::vector<double>(N, std::numeric_limits<double>::quiet_NaN());
-      current_statement__ = 11;
+      current_statement__ = 10;
       for (int i = 1; i <= N; ++i) {
-        current_statement__ = 8;
+        current_statement__ = 7;
         stan::model::assign(log_lik,
           stan::math::double_exponential_lpdf<false>(
             stan::model::rvalue(calories, "calories",
               stan::model::index_uni(i)),
             stan::model::rvalue(mu, "mu", stan::model::index_uni(i)), sigma),
           "assigning variable log_lik", stan::model::index_uni(i));
-        current_statement__ = 9;
+        current_statement__ = 8;
         stan::model::assign(calorie,
           stan::math::double_exponential_rng(
             stan::model::rvalue(mu, "mu", stan::model::index_uni(i)), sigma,
@@ -297,9 +288,6 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
       local_scalar_t__ sigma = DUMMY_VAR__;
       sigma = in__.read<local_scalar_t__>();
       out__.write_free_lb(0, sigma);
-      local_scalar_t__ nu = DUMMY_VAR__;
-      nu = in__.read<local_scalar_t__>();
-      out__.write_free_lub(1, 80, nu);
     } catch (const std::exception& e) {
       stan::lang::rethrow_located(e, locations_array__[current_statement__]);
     }
@@ -307,7 +295,7 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
     
   inline void get_param_names(std::vector<std::string>& names__) const {
     
-    names__ = std::vector<std::string>{"alpha", "beta", "sigma", "nu", "mu",
+    names__ = std::vector<std::string>{"alpha", "beta", "sigma", "mu",
       "log_lik", "calorie"};
     
     } // get_param_names() 
@@ -315,8 +303,8 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
   inline void get_dims(std::vector<std::vector<size_t>>& dimss__) const {
     
     dimss__ = std::vector<std::vector<size_t>>{std::vector<size_t>{},
-      std::vector<size_t>{}, std::vector<size_t>{}, std::vector<size_t>{
-      }, std::vector<size_t>{static_cast<size_t>(N)},
+      std::vector<size_t>{}, std::vector<size_t>{},
+      std::vector<size_t>{static_cast<size_t>(N)},
       std::vector<size_t>{static_cast<size_t>(N)},
       std::vector<size_t>{static_cast<size_t>(N)}};
     
@@ -331,7 +319,6 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
     param_names__.emplace_back(std::string() + "alpha");
     param_names__.emplace_back(std::string() + "beta");
     param_names__.emplace_back(std::string() + "sigma");
-    param_names__.emplace_back(std::string() + "nu");
     if (emit_transformed_parameters__) {
       for (int sym1__ = 1; sym1__ <= N; ++sym1__) {
         {
@@ -364,7 +351,6 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
     param_names__.emplace_back(std::string() + "alpha");
     param_names__.emplace_back(std::string() + "beta");
     param_names__.emplace_back(std::string() + "sigma");
-    param_names__.emplace_back(std::string() + "nu");
     if (emit_transformed_parameters__) {
       for (int sym1__ = 1; sym1__ <= N; ++sym1__) {
         {
@@ -390,13 +376,13 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
     
   inline std::string get_constrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"alpha\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"nu\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"mu\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"transformed_parameters\"},{\"name\":\"log_lik\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"generated_quantities\"},{\"name\":\"calorie\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
+    return std::string("[{\"name\":\"alpha\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"mu\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"transformed_parameters\"},{\"name\":\"log_lik\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"generated_quantities\"},{\"name\":\"calorie\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
     
     } // get_constrained_sizedtypes() 
     
   inline std::string get_unconstrained_sizedtypes() const {
     
-    return std::string("[{\"name\":\"alpha\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"nu\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"mu\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"transformed_parameters\"},{\"name\":\"log_lik\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"generated_quantities\"},{\"name\":\"calorie\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
+    return std::string("[{\"name\":\"alpha\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"beta\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"sigma\",\"type\":{\"name\":\"real\"},\"block\":\"parameters\"},{\"name\":\"mu\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"transformed_parameters\"},{\"name\":\"log_lik\",\"type\":{\"name\":\"vector\",\"length\":" + std::to_string(N) + "},\"block\":\"generated_quantities\"},{\"name\":\"calorie\",\"type\":{\"name\":\"array\",\"length\":" + std::to_string(N) + ",\"element_type\":{\"name\":\"real\"}},\"block\":\"generated_quantities\"}]");
     
     } // get_unconstrained_sizedtypes() 
     
@@ -410,7 +396,7 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
                             const bool emit_generated_quantities = true,
                             std::ostream* pstream = nullptr) const {
       const size_t num_params__ = 
-  (((1 + 1) + 1) + 1);
+  ((1 + 1) + 1);
       const size_t num_transformed = N;
       const size_t num_gen_quantities = 
   (N + N);
@@ -432,7 +418,7 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
                             bool emit_generated_quantities = true,
                             std::ostream* pstream = nullptr) const {
       const size_t num_params__ = 
-  (((1 + 1) + 1) + 1);
+  ((1 + 1) + 1);
       const size_t num_transformed = N;
       const size_t num_gen_quantities = 
   (N + N);
@@ -471,9 +457,8 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
                               std::vector<int>& params_i,
                               std::vector<double>& vars,
                               std::ostream* pstream__ = nullptr) const {
-     constexpr std::array<const char*, 4> names__{"alpha", "beta", "sigma",
-      "nu"};
-      const std::array<Eigen::Index, 4> constrain_param_sizes__{1, 1, 1, 1};
+     constexpr std::array<const char*, 3> names__{"alpha", "beta", "sigma"};
+      const std::array<Eigen::Index, 3> constrain_param_sizes__{1, 1, 1};
       const auto num_constrained_params__ = std::accumulate(
         constrain_param_sizes__.begin(), constrain_param_sizes__.end(), 0);
     

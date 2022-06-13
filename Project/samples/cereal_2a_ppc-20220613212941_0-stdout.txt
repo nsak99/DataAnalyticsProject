@@ -1,0 +1,38 @@
+method = sample (Default)
+  sample
+    num_samples = 1000 (Default)
+    num_warmup = 0
+    save_warmup = 0 (Default)
+    thin = 1 (Default)
+    adapt
+      engaged = 1 (Default)
+      gamma = 0.050000000000000003 (Default)
+      delta = 0.80000000000000004 (Default)
+      kappa = 0.75 (Default)
+      t0 = 10 (Default)
+      init_buffer = 75 (Default)
+      term_buffer = 50 (Default)
+      window = 25 (Default)
+    algorithm = fixed_param
+    num_chains = 1 (Default)
+id = 1 (Default)
+data
+  file = C:\Users\user\AppData\Local\Temp\tmpbw1k1b7l\ef6c0kla.json
+init = 2 (Default)
+random
+  seed = 12062022
+output
+  file = C:\GitHub\DataAnalyticsProject\Project\samples\cereal_2a_ppc-20220613212941.csv
+  diagnostic_file =  (Default)
+  refresh = 1000
+  sig_figs = -1 (Default)
+  profile_file = profile.csv (Default)
+num_threads = 1 (Default)
+
+Iteration:   1 / 1000 [  0%]  (Sampling)
+Iteration: 1000 / 1000 [100%]  (Sampling)
+
+ Elapsed Time: 0 seconds (Warm-up)
+               0.224 seconds (Sampling)
+               0.224 seconds (Total)
+

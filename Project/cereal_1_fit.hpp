@@ -10,16 +10,16 @@ using namespace stan::math;
 stan::math::profile_map profiles__;
 static constexpr std::array<const char*, 11> locations_array__ = 
 {" (found before start of program)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_1_fit.stan', line 7, column 3 to column 11)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_1_fit.stan', line 8, column 3 to column 23)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_1_fit.stan', line 18, column 3 to column 52)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_1_fit.stan', line 19, column 3 to column 40)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_1_fit.stan', line 12, column 3 to column 24)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_1_fit.stan', line 13, column 3 to column 29)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_1_fit.stan', line 14, column 3 to column 32)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_1_fit.stan', line 2, column 3 to column 9)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_1_fit.stan', line 3, column 17 to column 18)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_1_fit.stan', line 3, column 3 to column 20)"};
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_1_fit.stan', line 7, column 3 to column 11)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_1_fit.stan', line 8, column 3 to column 23)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_1_fit.stan', line 18, column 3 to column 52)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_1_fit.stan', line 19, column 3 to column 40)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_1_fit.stan', line 12, column 3 to column 24)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_1_fit.stan', line 13, column 3 to column 30)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_1_fit.stan', line 14, column 3 to column 32)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_1_fit.stan', line 2, column 3 to column 9)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_1_fit.stan', line 3, column 17 to column 18)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_1_fit.stan', line 3, column 3 to column 20)"};
 
 
 
@@ -109,9 +109,9 @@ class cereal_1_fit_model final : public model_base_crtp<cereal_1_fit_model> {
                 0, lp__);
       {
         current_statement__ = 5;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(mu, 107, 20));
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(mu, 104, 14));
         current_statement__ = 6;
-        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.01));
+        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.071));
         current_statement__ = 7;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(calories, mu, sigma));
       }

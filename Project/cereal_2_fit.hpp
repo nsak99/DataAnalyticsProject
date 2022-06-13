@@ -10,28 +10,28 @@ using namespace stan::math;
 stan::math::profile_map profiles__;
 static constexpr std::array<const char*, 23> locations_array__ = 
 {" (found before start of program)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 8, column 3 to column 14)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 9, column 3 to column 13)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 10, column 3 to column 23)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 14, column 3 to column 36)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 25, column 3 to column 21)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 26, column 3 to column 19)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 28, column 6 to column 59)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 29, column 6 to column 44)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 27, column 18 to line 30, column 4)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 27, column 3 to line 30, column 4)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 18, column 3 to column 27)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 19, column 3 to column 26)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 20, column 3 to column 29)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 21, column 3 to column 32)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 2, column 3 to column 9)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 3, column 10 to column 11)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 3, column 3 to column 20)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 4, column 17 to column 18)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 4, column 3 to column 20)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 14, column 10 to column 11)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 25, column 10 to column 11)",
- " (in 'C:/GitHub/DataAnalyticsProject/cereal_2_fit.stan', line 26, column 16 to column 17)"};
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 8, column 3 to column 14)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 9, column 3 to column 13)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 10, column 3 to column 23)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 14, column 3 to column 36)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 25, column 3 to column 21)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 26, column 3 to column 19)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 28, column 6 to column 59)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 29, column 6 to column 44)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 27, column 18 to line 30, column 4)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 27, column 3 to line 30, column 4)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 18, column 3 to column 27)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 19, column 3 to column 26)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 20, column 3 to column 30)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 21, column 3 to column 32)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 2, column 3 to column 9)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 3, column 10 to column 11)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 3, column 3 to column 20)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 4, column 17 to column 18)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 4, column 3 to column 20)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 14, column 10 to column 11)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 25, column 10 to column 11)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_2_fit.stan', line 26, column 16 to column 17)"};
 
 
 
@@ -163,11 +163,11 @@ class cereal_2_fit_model final : public model_base_crtp<cereal_2_fit_model> {
         "assigning variable mu");
       {
         current_statement__ = 11;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(alpha, 107, 20));
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(alpha, 104, 14));
         current_statement__ = 12;
         lp_accum__.add(stan::math::lognormal_lpdf<propto__>(beta, 0, 1));
         current_statement__ = 13;
-        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.01));
+        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.071));
         current_statement__ = 14;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(calories, mu, sigma));
       }
