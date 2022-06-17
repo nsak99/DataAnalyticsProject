@@ -1,7 +1,7 @@
 data {
    int N;
    vector[N] sugars;
-   real calories[N];
+   vector[N] calories;
 }
 
 parameters {

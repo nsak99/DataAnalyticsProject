@@ -27,8 +27,8 @@ static constexpr std::array<const char*, 23> locations_array__ =
  " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 2, column 3 to column 9)",
  " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 3, column 10 to column 11)",
  " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 3, column 3 to column 20)",
- " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 4, column 17 to column 18)",
- " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 4, column 3 to column 20)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 4, column 10 to column 11)",
+ " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 4, column 3 to column 22)",
  " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 14, column 10 to column 11)",
  " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 25, column 10 to column 11)",
  " (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 26, column 16 to column 17)"};
@@ -41,8 +41,9 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
  private:
   int N;
   Eigen::Matrix<double, -1, 1> sugars__;
-  std::vector<double> calories; 
+  Eigen::Matrix<double, -1, 1> calories__; 
   Eigen::Map<Eigen::Matrix<double, -1, 1>> sugars{nullptr, 0};
+  Eigen::Map<Eigen::Matrix<double, -1, 1>> calories{nullptr, 0};
  
  public:
   ~cereal_3_fit_model() { }
@@ -108,12 +109,27 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
       current_statement__ = 19;
       context__.validate_dims("data initialization","calories","double",
            std::vector<size_t>{static_cast<size_t>(N)});
-      calories = 
-        std::vector<double>(N, std::numeric_limits<double>::quiet_NaN());
+      calories__ = 
+        Eigen::Matrix<double, -1, 1>::Constant(N,
+          std::numeric_limits<double>::quiet_NaN());
+      new (&calories) Eigen::Map<Eigen::Matrix<double, -1, 1>>(calories__.data(), N);
+        
       
-      
-      current_statement__ = 19;
-      calories = context__.vals_r("calories");
+      {
+        std::vector<local_scalar_t__> calories_flat__;
+        current_statement__ = 19;
+        calories_flat__ = context__.vals_r("calories");
+        current_statement__ = 19;
+        pos__ = 1;
+        current_statement__ = 19;
+        for (int sym1__ = 1; sym1__ <= N; ++sym1__) {
+          current_statement__ = 19;
+          stan::model::assign(calories, calories_flat__[(pos__ - 1)],
+            "assigning variable calories", stan::model::index_uni(sym1__));
+          current_statement__ = 19;
+          pos__ = (pos__ + 1);
+        }
+      }
       current_statement__ = 20;
       stan::math::validate_non_negative_index("mu", "N", N);
       current_statement__ = 21;
