@@ -1,0 +1,174 @@
+method = sample (Default)
+  sample
+    num_samples = 1000 (Default)
+    num_warmup = 1000 (Default)
+    save_warmup = 0 (Default)
+    thin = 1 (Default)
+    adapt
+      engaged = 1 (Default)
+      gamma = 0.050000000000000003 (Default)
+      delta = 0.80000000000000004 (Default)
+      kappa = 0.75 (Default)
+      t0 = 10 (Default)
+      init_buffer = 75 (Default)
+      term_buffer = 50 (Default)
+      window = 25 (Default)
+    algorithm = hmc (Default)
+      hmc
+        engine = nuts (Default)
+          nuts
+            max_depth = 10 (Default)
+        metric = diag_e (Default)
+        metric_file =  (Default)
+        stepsize = 1 (Default)
+        stepsize_jitter = 0 (Default)
+    num_chains = 1 (Default)
+id = 2
+data
+  file = C:\Users\user\AppData\Local\Temp\tmpyv1tpl7w\1qfq25m2.json
+init = 2 (Default)
+random
+  seed = 12062022
+output
+  file = C:\GitHub\DataAnalyticsProject\Project\samples\cereal_3_fit-20220619234511_2.csv
+  diagnostic_file =  (Default)
+  refresh = 100 (Default)
+  sig_figs = -1 (Default)
+  profile_file = profile.csv (Default)
+num_threads = 1 (Default)
+
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: lognormal_lpdf: Random variable is -1.24439, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: lognormal_lpdf: Random variable is -0.19037, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: lognormal_lpdf: Random variable is -1.35595, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+Rejecting initial value:
+  Error evaluating the log probability at the initial value.
+Exception: lognormal_lpdf: Random variable is -1.86999, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+
+Gradient evaluation took 3e-005 seconds
+1000 transitions using 10 leapfrog steps per transition would take 0.3 seconds.
+Adjust your expectations accordingly!
+
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: lognormal_lpdf: Random variable is -1.26951, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: double_exponential_lpdf: Scale parameter is inf, but must be positive finite! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 21, column 3 to column 44)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: lognormal_lpdf: Random variable is -0.0542297, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: double_exponential_lpdf: Scale parameter is inf, but must be positive finite! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 21, column 3 to column 44)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Iteration:    1 / 2000 [  0%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: lognormal_lpdf: Random variable is -61.1888, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: double_exponential_lpdf: Scale parameter is inf, but must be positive finite! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 21, column 3 to column 44)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: lognormal_lpdf: Random variable is -0.0688434, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: lognormal_lpdf: Random variable is -0.0240393, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: lognormal_lpdf: Random variable is -0.0598427, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Iteration:  100 / 2000 [  5%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: lognormal_lpdf: Random variable is -5.01341, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: lognormal_lpdf: Random variable is -3.72462, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Iteration:  200 / 2000 [ 10%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: lognormal_lpdf: Random variable is -2.10895, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Iteration:  300 / 2000 [ 15%]  (Warmup)
+Iteration:  400 / 2000 [ 20%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: lognormal_lpdf: Random variable is -0.7523, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: lognormal_lpdf: Random variable is -8.32096, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Iteration:  500 / 2000 [ 25%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: lognormal_lpdf: Random variable is -0.0340288, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Iteration:  600 / 2000 [ 30%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: lognormal_lpdf: Random variable is -0.00273394, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Iteration:  700 / 2000 [ 35%]  (Warmup)
+Iteration:  800 / 2000 [ 40%]  (Warmup)
+Iteration:  900 / 2000 [ 45%]  (Warmup)
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: lognormal_lpdf: Random variable is -0.152923, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
+Exception: lognormal_lpdf: Random variable is -7.09343, but must be nonnegative! (in 'C:/GitHub/DataAnalyticsProject/Project/cereal_3_fit.stan', line 19, column 3 to column 26)
+If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
+but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
+
+Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Iteration: 1100 / 2000 [ 55%]  (Sampling)
+Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Iteration: 1300 / 2000 [ 65%]  (Sampling)
+Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Iteration: 1500 / 2000 [ 75%]  (Sampling)
+Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Iteration: 1700 / 2000 [ 85%]  (Sampling)
+Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Iteration: 1900 / 2000 [ 95%]  (Sampling)
+Iteration: 2000 / 2000 [100%]  (Sampling)
+
+ Elapsed Time: 0.139 seconds (Warm-up)
+               0.769 seconds (Sampling)
+               0.908 seconds (Total)
+
