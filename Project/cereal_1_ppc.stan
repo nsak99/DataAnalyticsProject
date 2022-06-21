@@ -1,5 +1,5 @@
 generated quantities {
-   real mu = normal_rng(104, 14);
-   real sigma = exponential_rng(0.071);
+   real mu = normal_rng(105, 15);
+   real sigma = exponential_rng(0.067);
    real calories = normal_rng(mu, sigma);
 }

@@ -180,11 +180,11 @@ class cereal_3_fit_model final : public model_base_crtp<cereal_3_fit_model> {
       {
         current_statement__ = 11;
         lp_accum__.add(
-          stan::math::double_exponential_lpdf<propto__>(alpha, 104, 14));
+          stan::math::double_exponential_lpdf<propto__>(alpha, 105, 15));
         current_statement__ = 12;
         lp_accum__.add(stan::math::lognormal_lpdf<propto__>(beta, 0, 1));
         current_statement__ = 13;
-        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.071));
+        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.067));
         current_statement__ = 14;
         lp_accum__.add(
           stan::math::double_exponential_lpdf<propto__>(calories, mu, sigma));

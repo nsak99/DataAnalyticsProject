@@ -15,9 +15,9 @@ transformed parameters {
 }
 
 model {
-   alpha ~ normal(104, 14);
+   alpha ~ normal(105, 15);
    beta ~ lognormal(0, 1);
-   sigma ~ exponential(0.071);
+   sigma ~ exponential(0.067);
    calories ~ normal(mu, sigma);
 }
 

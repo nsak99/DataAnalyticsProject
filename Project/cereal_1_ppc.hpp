@@ -116,10 +116,10 @@ class cereal_1_ppc_model final : public model_base_crtp<cereal_1_ppc_model> {
       } 
       double mu = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 1;
-      mu = stan::math::normal_rng(104, 14, base_rng__);
+      mu = stan::math::normal_rng(105, 15, base_rng__);
       double sigma = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 2;
-      sigma = stan::math::exponential_rng(0.071, base_rng__);
+      sigma = stan::math::exponential_rng(0.067, base_rng__);
       double calories = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 3;
       calories = stan::math::normal_rng(mu, sigma, base_rng__);

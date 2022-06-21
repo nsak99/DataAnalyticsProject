@@ -9,8 +9,8 @@ parameters {
 }
 
 model {
-   mu ~ normal(104, 14);
-   sigma ~ exponential(0.071);
+   mu ~ normal(105, 15);
+   sigma ~ exponential(0.067);
    calories ~ normal(mu, sigma);
 }
 

@@ -146,13 +146,13 @@ class cereal_2b_ppc_model final : public model_base_crtp<cereal_2b_ppc_model> {
       } 
       double alpha = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 1;
-      alpha = stan::math::normal_rng(104, 14, base_rng__);
+      alpha = stan::math::normal_rng(105, 15, base_rng__);
       double beta = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 2;
       beta = stan::math::lognormal_rng(0, 1, base_rng__);
       double sigma = std::numeric_limits<double>::quiet_NaN();
       current_statement__ = 3;
-      sigma = stan::math::exponential_rng(0.071, base_rng__);
+      sigma = stan::math::exponential_rng(0.067, base_rng__);
       std::vector<double> calorie =
          std::vector<double>(N, std::numeric_limits<double>::quiet_NaN());
       current_statement__ = 7;

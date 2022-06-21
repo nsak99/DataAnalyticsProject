@@ -15,9 +15,9 @@ transformed parameters {
 }
 
 model {
-   alpha ~ double_exponential(104, 14);
+   alpha ~ double_exponential(105, 15);
    beta ~ lognormal(0, 1);
-   sigma ~ exponential(0.071);
+   sigma ~ exponential(0.067);
    calories ~ double_exponential(mu, sigma);
 }
 

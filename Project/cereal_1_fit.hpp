@@ -109,9 +109,9 @@ class cereal_1_fit_model final : public model_base_crtp<cereal_1_fit_model> {
                 0, lp__);
       {
         current_statement__ = 5;
-        lp_accum__.add(stan::math::normal_lpdf<propto__>(mu, 104, 14));
+        lp_accum__.add(stan::math::normal_lpdf<propto__>(mu, 105, 15));
         current_statement__ = 6;
-        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.071));
+        lp_accum__.add(stan::math::exponential_lpdf<propto__>(sigma, 0.067));
         current_statement__ = 7;
         lp_accum__.add(stan::math::normal_lpdf<propto__>(calories, mu, sigma));
       }
